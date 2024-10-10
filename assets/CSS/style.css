@@ -1,0 +1,76 @@
+body {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 0px;
+    padding-bottom: 10px;
+    background-color: #eae7dc; /* Light background color */
+}
+
+.table-hover tbody tr:hover td {
+    background: #3498db; /* Light blue hover effect */
+    color: #ffffff; /* White text on hover */
+}
+
+.rounded-pill:hover {
+    background-color: #e74c3c; /* Bright red hover effect */
+    color: #f9f9f9; /* Light off-white text */
+}
+
+/* Table responsive */
+@media only screen and (max-width: 768px) {
+    .table-responsive tbody, .table-responsive tr, .table-responsive td {
+        display: block;
+        text-align: right;
+    }
+    .table-responsive thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    .table-responsive td {
+        position: relative;
+        padding-left: 60%;
+    }
+    .table-responsive td::before {
+        content: attr(data-title);
+        position: absolute;
+        left: 10px;
+        font-weight: 600;
+        color: #2ecc71; /* Greenish label color */
+    }
+}
+
+.table-responsive {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #7f8c8d; /* Gray border */
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.allUser {
+    margin-top: 40px;
+    margin-left: 100px;
+    color: #2c3e50; /* Dark text color */
+}
+
+.user {
+    margin-top: 20px;
+    margin-left: 100px;
+    padding-bottom: 15px;
+    color: #8e44ad; /* Purple color for user section */
+}
+
+.d-grid > h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #16a085; /* Teal color for headings */
+}
+
+.adduserform {
+    margin: 100px;
+    margin-top: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ecf0f1; /* Light background for form */
+    border: 2px solid #d35400; /* Orange border */
+}
